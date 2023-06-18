@@ -10,7 +10,7 @@ published: true
 
   {% for project in site.books %}
 
-          <a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">
+          <a href="{{ project.url }}">
               {{ project.title }}
               <br/>
           </a>
