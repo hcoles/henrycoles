@@ -1,7 +1,11 @@
 ---
-layout: default
 title: The Traitor's Moon
 description: 
+layout: about
+profile:
+  align: right
+  image: water_wheel.jpg
+published: true
 ---
 
 # The Traitor's Moon
