@@ -2,6 +2,10 @@
 layout: default
 title: The Cipher Engines
 description: 
+layout: about
+profile:
+  align: right
+  image: crow.jpg
 ---
 
 # The Cipher Engines

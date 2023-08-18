@@ -1,6 +1,10 @@
 ---
 layout: default 
 title: Needs a title
+layout: about
+profile:
+  align: right
+  image: whale.jpg
 ---
 
 # Needs a title
