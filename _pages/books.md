@@ -10,10 +10,15 @@ published: true
 
   {% for project in site.books %}
 
-          <a href="{{ project.url }}">
+          <div class="projectTile">
+          <img src="/assets/images/{{ project.profile.image }}" class="bookimg" />
+          <span>
+          <a href="{{ project.url }}" >
               {{ project.title }}
-              <br/>
           </a>
+          </span>
+
+          </div>
 
   {% endfor %}
 

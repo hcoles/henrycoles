@@ -48,12 +48,9 @@ collections:
     output: true
     permalink: /books/:name/
     order:
-      - shortProject.md
-      - longerProjectTitle.md
-      - redirect.md
-      - project4.md
-      - project5.md
-      - project6.md
+      - the_cipher_engines.md
+      - the_traitors_moon.md
+      - the_stowaway.md
 
 sass:
   sass_dir: /assets/css/_sass
