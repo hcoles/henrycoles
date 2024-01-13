@@ -4,7 +4,7 @@ title: The Stowaway
 layout: about
 profile:
   align: right
-  image: whale.jpg
+  image: whale.svg
 ---
 
 # The Stowaway

@@ -4,7 +4,7 @@ description:
 layout: about
 profile:
   align: right
-  image: water_wheel.jpg
+  image: water_wheel.svg
 published: true
 ---
 

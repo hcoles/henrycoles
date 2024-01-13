@@ -5,7 +5,7 @@ description:
 layout: about
 profile:
   align: right
-  image: crow.jpg
+  image: crow_alt.svg
 ---
 
 # The Cipher Engines
