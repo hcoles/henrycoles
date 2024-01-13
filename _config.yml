@@ -5,7 +5,7 @@ description:
 
 baseurl: #name of GitHub repository
 url: #custom url to be used instead of GitHub repository
-email: #
+email: hello@henrycoles.com
 
 # Pagination
 paginate: 4
@@ -23,7 +23,7 @@ quora: "#"
 instagram: "#"
 facebook: "#"
 
-
+ 
 # Markdown
 highlighter: rouge
 markdown: kramdown
