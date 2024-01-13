@@ -109,11 +109,15 @@ blockquote {
 
 .headline, .post-headline {
   font-size: 2em;
-  margin-bottom: -0.4em;
+  margin-bottom: -0.2em;
 
   @include media-query($on-palm) {
     font-size: 2em;
   }
+}
+
+.post-description {
+  margin-bottom: 0.6em;
 }
 
 /* Pagination style in index/home page */

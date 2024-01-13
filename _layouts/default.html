@@ -9,11 +9,12 @@
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
-        <h1 class="post-headline">{{site.title}}</h1>
-        <h3 class="post-description"><i>{{site.description}}</i></h3>
+        <h1 class="post-headline">{{site.title}}<img src="{{site.baseurl}}/assets/images/crow.svg" style="width:84px; float: left;"/></h1>
 
         {% include navigation.html %}
 
+        <h3 class="post-description"><i>{{site.description}}</i></h3>
+        
         {% seo %}
 
         {% include favicon.html %}
@@ -24,6 +25,7 @@
 
     <body>
         <main>
+            
             <article>
                 {{ content }}
             </article>
