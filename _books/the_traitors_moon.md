@@ -17,3 +17,5 @@ Agatha shouldn't be reading the books in the wizard's library, and she isn't eve
 Set in an alternate early industrial Britain, The Traitor's Moon explores themes of social justice whilst gently stretching the laws of thermodynamics. It was longlisted for the [Bath Children's Novel Award](https://bathnovelaward.co.uk/childrens-novel-award/) and [WriteMentor](https://write-mentor.com/) Children's Novel Award, and won a [Scottish Book Trust New Writers Award](https://www.scottishbooktrust.com/writing-and-authors/new-writers-awards/this-years-new-writers).
 
 It was also one of the finalists for the [SCBWI Undiscovered Voices competition](https://www.undiscoveredvoices.com/?page_id=1106), and features in the 2024 anthology.
+
+You can read the opening chapters in [Undiscovered Voices Anthology](https://www.undiscoveredvoices.com/wp-content/uploads/2024/01/UV2024_Ebook.pdf).
