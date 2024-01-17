@@ -17,10 +17,8 @@
   flex: 1 0 200px;
   border-radius: 15px;
   background: $projectbox;
-  @media (prefers-color-scheme: dark) {
-    background: $projectbox-dark;
-  }
-  width: 100%;
+ 
+ width: 100%;
   overflow: hidden;
   display: table;
   margin-bottom: 0.2em;

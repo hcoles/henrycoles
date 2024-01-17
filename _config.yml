@@ -48,10 +48,9 @@ collections:
     output: true
     permalink: /books/:name/
     order:
-      - the_cipher_engines.md
-      - the_traitors_moon.md
       - the_stowaway.md
-
+      - the_traitors_moon.md
+      - the_cipher_engines.md
 sass:
   sass_dir: /assets/css/_sass
   style: compressed

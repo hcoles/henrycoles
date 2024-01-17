@@ -10,14 +10,12 @@ body {
   font-size: $base-font-size;
   color: $text-color;
   background-color: $body-bg;
+
   padding: 2em 1em;
   text-rendering: optimizeLegibility;
   height: 100%;
 
-  @media (prefers-color-scheme: dark) {
-    background-color: $body-bg-dark;
-    color: $text-color-dark;
-  }
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -35,9 +33,6 @@ a {
   &:hover{
     color: $text-color;
 
-    @media (prefers-color-scheme: dark) {
-      color: $text-color-dark;
-    }
 
   }
 }
@@ -65,9 +60,6 @@ p a {
 
   }
 
-  @media (prefers-color-scheme: dark) {
-    color: $text-color-dark;
-  }
 }
 
 

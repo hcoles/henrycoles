@@ -18,4 +18,4 @@ Set in an alternate early industrial Britain, The Traitor's Moon explores themes
 
 It was also one of the finalists for the [SCBWI Undiscovered Voices competition](https://www.undiscoveredvoices.com/?page_id=1106), and features in the 2024 anthology.
 
-You can read the opening chapters in [Undiscovered Voices Anthology](https://www.undiscoveredvoices.com/wp-content/uploads/2024/01/UV2024_Ebook.pdf).
+You can read the opening chapters in the [Undiscovered Voices Anthology](https://www.undiscoveredvoices.com/wp-content/uploads/2024/01/UV2024_Ebook.pdf).
