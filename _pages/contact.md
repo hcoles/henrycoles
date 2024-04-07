@@ -5,4 +5,4 @@ permalink: /contact/
 published: true
 ---
 
-If you'd like to get in touch [e-mail me](mailto:hello@henrycoles.com), or use the social media links at the bottom of this page.
+I can be contacted by [e-mail](mailto:hello@henrycoles.com), or via the social media links at the bottom of this page.
