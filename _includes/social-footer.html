@@ -17,6 +17,15 @@ target="_blank">
 </a>
 {%- endif -%}
 
+{%- if site.bluesky -%}
+<a title="{{ _locale_string_follow | replace: '[NAME]', 'Bluesky' }}"
+class="social-button bluesky"
+href="https://bsky.app/profile/{{ site.bluesky }}" itemprop="sameAs"
+target="_blank">
+<i class="fab fa-bluesky"></i>
+</a>
+{%- endif -%}
+
 {%- if site.twitter -%}
 <a title="{{ _locale_string_follow | replace: '[NAME]', 'Twitter' }}"
 class="social-button twitter"

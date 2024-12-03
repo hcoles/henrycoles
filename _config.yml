@@ -13,6 +13,7 @@ permalink: /news/:year/:title/
 paginate_path: /news/page:num/
 
 # Social media links in footer
+bluesky: "pitest.bsky.social"
 twitter: "_pitest"
 linkedin: "henry-coles-474ab93"
 stackoverflow: "#"

@@ -40,6 +40,7 @@
 .fa-quora
 .fa-instagram
 .fa-mastodon
+.fa-bluesky
 .fa-stack-overflow {
   font-size: 25px;
 }
@@ -58,11 +59,23 @@
   background: #55acee;
 }
 
+.rounded-social-buttons .social-button.bluesky {
+  background: #1185FE;
+}
+
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
   color: #55acee;
   background: #fefefe;
   border-color: #55acee;
 }
+
+.rounded-social-buttons .social-button.bluesky:hover, .rounded-social-buttons .social-button.bluesky:focus {
+  color: #1185FE;
+  background: #fefefe;
+  border-color: #1185FE;
+  
+}
+
 
 .rounded-social-buttons .social-button.mastodon {
   background: #563ACC;
