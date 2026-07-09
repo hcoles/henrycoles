@@ -28,10 +28,10 @@ h1,h2,h3,h4,h5,h6 {
 
 
 a {
-  color: $brand-color;
+  color: $link-color;
   text-decoration: none;
   &:hover{
-    color: $text-color;
+    color: $brand-color;
 
 
   }
@@ -40,16 +40,16 @@ a {
 
 
 p a {
-  color: $text-color;
+  color: $link-color;
   text-decoration: underline;
-  text-decoration-color: $rule-color;
+  text-decoration-color: rgba($link-color, 0.45);
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
   transition: color 0.15s ease, text-decoration-color 0.15s ease;
 
   &:hover {
     color: $brand-color;
-    text-decoration-color: $brand-color;
+    text-decoration-color: currentColor;
   }
 
 }

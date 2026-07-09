@@ -6,15 +6,20 @@
 }
 
 .site-title {
+  position: relative;
   display: flex;
   align-items: center;
   margin: 0 0 0.5em;
+  padding-left: 90px;
   font-size: 2.4em;
   letter-spacing: -0.01em;
 
   img {
-    width: 44px;
-    margin-right: 0.35em;
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 110px;
   }
 
   a {
@@ -23,6 +28,12 @@
 
   @include media-query($on-palm) {
     font-size: 1.9em;
+    padding-left: 74px;
+
+    img {
+      left: -20px;
+      width: 90px;
+    }
   }
 }
 
