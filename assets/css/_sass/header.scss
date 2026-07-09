@@ -1,0 +1,47 @@
+/* Masthead */
+.site-header {
+  border-bottom: 1px solid $rule-color;
+  padding-bottom: 1.2em;
+  margin-bottom: 2em;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.5em;
+  font-size: 2.4em;
+  letter-spacing: -0.01em;
+
+  img {
+    width: 44px;
+    margin-right: 0.35em;
+  }
+
+  a {
+    color: $text-color;
+  }
+
+  @include media-query($on-palm) {
+    font-size: 1.9em;
+  }
+}
+
+.site-nav {
+  .links a {
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-right: 1.6em;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      color: $brand-color;
+      border-bottom-color: $brand-color;
+    }
+  }
+}

@@ -1,16 +1,13 @@
 /* Footer */
 footer {
     clear: both;
-    margin-top: 2em;
-}
-
-/* Footer navigation links */
-.links a {
-    margin-right: 1em;
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid $rule-color;
 }
 
 /* Footer copyrights */
 .copy {
-    color: #aaa;
+    color: $light-gray;
     text-align: center;
 }

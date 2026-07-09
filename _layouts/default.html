@@ -2,19 +2,16 @@
 # layout: compress
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
-        <h1 class="post-headline">{{site.title}}<img src="{{site.baseurl}}/assets/images/crow.svg" style="width:84px; float: left;"/></h1>
-
-        {% include navigation.html %}
-
-        <h3 class="post-description"></h3>
-        
         {% seo %}
 
         {% include favicon.html %}
@@ -24,8 +21,18 @@
     </head>
 
     <body>
+        <header class="site-header">
+            <h1 class="site-title">
+                <img src="{{site.baseurl}}/assets/images/crow.svg" alt="">
+                <a href="{{site.baseurl}}/">{{site.title}}</a>
+            </h1>
+
+            <nav class="site-nav">
+                {% include navigation.html %}
+            </nav>
+        </header>
+
         <main>
-            
             <article>
                 {{ content }}
             </article>

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: The Cipher Engines
 description: 
 layout: about

@@ -1,4 +1,4 @@
-/* Social Icons for Footer from https://codepen.io/deutschland2k/pen/qKpdJX */
+/* Social icons for the footer: quiet monoline marks, one shared hover treatment */
 
 .rounded-social-buttons {
   text-align: center;
@@ -10,163 +10,23 @@
   cursor: pointer;
   width: 2.125rem;
   height: 2.125rem;
-  border: 0.125rem solid transparent;
+  border: 1px solid $rule-color;
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 1.5em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
+  color: $text-color;
+  background: transparent;
+  font-size: 1.05rem;
+  line-height: 2.05rem;
+  border-radius: 50%;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  margin: 0 0.2rem 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.rounded-social-buttons .fa-twitter,
-.fa-facebook-f,
-.fa-linkedin,
-.fa-github,
-.fa-orcid,
-.fa-researchgate,
-.fa-envelope
-.fa-quora
-.fa-instagram
-.fa-mastodon
-.fa-bluesky
-.fa-stack-overflow {
-  font-size: 25px;
-}
-
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
-
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.twitter {
-  background: #55acee;
-}
-
-.rounded-social-buttons .social-button.bluesky {
-  background: #1185FE;
-}
-
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #55acee;
-  background: #fefefe;
-  border-color: #55acee;
-}
-
-.rounded-social-buttons .social-button.bluesky:hover, .rounded-social-buttons .social-button.bluesky:focus {
-  color: #1185FE;
-  background: #fefefe;
-  border-color: #1185FE;
-  
-}
-
-
-.rounded-social-buttons .social-button.mastodon {
-  background: #563ACC;
-}
-
-.rounded-social-buttons .social-button.mastodon:hover, .rounded-social-buttons .social-button.mastodon:focus {
-  color: #563ACC;
-  background: #fefefe;
-  border-color: #563ACC;
-}
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
-
-.rounded-social-buttons .social-button.github {
-  background: #000000;
-}
-
-.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
-  color: #000000;
-  background: #fefefe;
-  border-color: #000000;
-}
-
-.rounded-social-buttons .social-button.email {
-  background: #60c17d;
-}
-
-.rounded-social-buttons .social-button.email:hover, .rounded-social-buttons .social-button.email:focus {
-  color: #60c17d;
-  background: #fefefe;
-  border-color: #000000;
-}
-
-.rounded-social-buttons .social-button.orcid {
-  background: #a6ce3b;
-}
-
-.rounded-social-buttons .social-button.orcid:hover, .rounded-social-buttons .social-button.orcid:focus {
-  color: #a6ce3b;
-  background: #fefefe;
-  border-color: #a6ce3b;
-}
-
-.rounded-social-buttons .social-button.researchgate {
-  background: #5dd1b0;
-}
-
-.rounded-social-buttons .social-button.researchgate:hover, .rounded-social-buttons .social-button.researchgate:focus {
-  color: #5dd1b0;
-  background: #fefefe;
-  border-color: #5dd1b0;
-}
-
-.rounded-social-buttons .social-button.quora {
-  background: #a82400;
-}
-
-.rounded-social-buttons .social-button.quora:hover, .rounded-social-buttons .social-button.quora:focus {
-  color: #a82400;
-  background: #fefefe;
-  border-color: #5dd1b0;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  color: #ffffff;
-  background: #f09433;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-    color: #a82400;
-    background: #fefefe;
-    border-color: #5dd1b0;
-}
-
-.rounded-social-buttons .social-button.stackoverflow {
-  background: #f48024;
-}
-
-.rounded-social-buttons .social-button.stackoverflow:hover, .rounded-social-buttons .social-button.stackoverflow:focus {
-  color: #f48024;
-  background: #fefefe;
-  border-color: #5dd1b0;
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+  background: $brand-color;
+  border-color: $brand-color;
+  color: #fff;
+  transform: translateY(-2px);
 }
