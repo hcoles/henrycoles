@@ -1,0 +1,217 @@
+[
+  {
+    "name": "A straight path",
+    "hint": "The R rune moves the ember right. Click on it to add it to your spell. You'll need to use it multiple times to make the ember reach the lock's heart.",
+    "limit": 10,
+    "fireweight": 18,
+    "runes": ["ᚱ"],
+    "map": [
+      "#########",
+      "#S.....G#",
+      "#########"
+    ]
+  },
+  {
+    "name": "The first twist",
+    "hint": "Use ᚢ, ᛞ, ᛈ and ᚱ to navigate the ember to the lock's heart. You can drag runes to re-order them.",
+    "limit": 20,
+    "fireweight": 60,
+    "runes": ["ᚢ", "ᛞ", "ᛈ", "ᚱ"],
+    "map": [
+      "###########",
+      "#S........#",
+      "#.......#.#",
+      "#.#####.#.#",
+      "#.#..G#.#.#",
+      "#.#.###.#.#",
+      "#.#.....#.#",
+      "#.#######.#",
+      "#.........#",
+      "###########"
+    ]
+  },
+  {
+    "name": "A third test",
+    "hint": "You're getting the hang of this now",
+    "limit": 30,
+    "fireweight": 90,
+    "runes": [
+      "ᚢ",
+      "ᛞ",
+      "ᛈ",
+      "ᚱ"
+    ],
+    "map": [
+      "#########",
+      "#S......#",
+      "#######.#",
+      "#.......#",
+      "#.#######",
+      "#.......#",
+      "#######.#",
+      "#G......#",
+      "#########"
+    ]
+  },
+  {
+    "name": "Seems familiar",
+    "hint": "This lock has a limit on how much fireweight you can use. Each movement rune uses 3 shingles. You'll need to use the ᛏ rune to increase the value in the multiplier. Each movement rune moves the ember by this amount, so if you make the value bigger the rune will move you more spaces for the same amount of fireweight. If it gets confusing try step mode to run the spell one rune at a time.",
+    "limit": 30,
+    "fireweight": 46,
+    "runes": [
+      "ᚢ",
+      "ᛞ",
+      "ᛈ",
+      "ᚱ",
+      "ᛏ"
+    ],
+    "map": [
+      "#########",
+      "#S......#",
+      "#######.#",
+      "#.......#",
+      "#.#######",
+      "#.......#",
+      "#######.#",
+      "#G......#",
+      "#########"
+    ]
+  },
+  {
+    "name": "Wrong direction",
+    "hint": "Use the ᚾ rune to decrease the value in the multiplier. It start with a value of 1. If it is 0, movement runes have no effect, but moving -1 space to the left is the same as moving right.",
+    "limit": 8,
+    "fireweight": 20,
+    "runes": ["ᛈ","ᚾ"],
+    "map": [
+      "#########",
+      "#S.....G#",
+      "#########"
+    ]
+  },
+  {
+  "name": "Follow the fire",
+  "hint": "You don't have much fireweight, but each fire you cross gives you 6 shingles more",
+  "limit": 40,
+  "fireweight": 3,
+  "runes": [
+    "ᚢ",
+    "ᛞ",
+    "ᛈ",
+    "ᚱ"
+  ],
+  "map": [
+    "############",
+    "#SF.F.F....#",
+    "#..........#",
+    "#.....F....#",
+    "#..........#",
+    "#.....F.F..#",
+    "#..........#",
+    "#.......F..#",
+    "#..........#",
+    "#.......F.F#",
+    "#.........G#",
+    "############"
+  ]
+},
+{
+  "name": "Don't get stuck",
+  "hint": "The xx",
+  "limit": 40,
+  "fireweight": 60,
+  "runes": [
+    "ᛏ",
+    "ᚱ"
+  ],
+  "map": [
+    "############",
+    "#S-.-.-.-.G#",
+    "############"
+  ]
+},
+{
+  "name": "A tough lock",
+  "hint": "The + squares increase the multiplier.",
+  "limit": 30,
+  "fireweight": 42,
+  "runes": [
+    "ᚢ",
+    "ᛞ",
+    "ᛈ",
+    "ᚱ",
+    "ᛏ",
+    "ᚾ"
+  ],
+  "map": [
+    "#########",
+    "#S+.#.+.#",
+    "###-#.#.#",
+    "###+#-#+#",
+    "###.#.#.#",
+    "###.#.#.#",
+    "#F#.#.#.#",
+    "#FF...#G#",
+    "#########"
+  ]
+},
+{
+  "name": "Launchpad",
+  "hint": "You can accumulate fireweight by going back and forth over recharge squares when they are close together.",
+  "limit": 40,
+  "fireweight": 6,
+  "runes": [
+    "ᚢ",
+    "ᛞ",
+    "ᛈ",
+    "ᚱ",
+    "ᛏ",
+    "ᚾ"
+  ],
+  "map": [
+    "############",
+    "#S#...#..F.#",
+    "#.#.#.#.##F#",
+    "#F#.#.#.#F.#",
+    "#.#.#.#.#.##",
+    "#F#.#.#.#.F#",
+    "#.#F#.#F##.#",
+    "#F#F#.#F#.F#",
+    "#.#.#.#.#F##",
+    "#F#F#.#F#.G#",
+    "#.F.#.F.#..#",
+    "############"
+  ]
+},
+  {
+    "name": "The Crooked Path",
+    "hint": "Long straight corridors reward careful use of ᛏ and ᚾ",
+    "limit": 66,
+    "fireweight": 74,
+    "runes": [
+      "ᚢ",
+      "ᛞ",
+      "ᛈ",
+      "ᚱ",
+      "ᛏ",
+      "ᚾ"
+    ],
+    "map": [
+      "###############",
+      "#....F#F......#",
+      "#.###.#.###.###",
+      "#...#.#...#...#",
+      "#.#.#.#.#.###.#",
+      "#..S#.#.#.#G.F#",
+      "#####.#.#.#####",
+      "#...#.#.#.....#",
+      "#.#.#.#.###.#.#",
+      "#.#F..#..F#...#",
+      "#.#######.###.#",
+      "#..F#...#...#.#",
+      "#.#.#.#.###.###",
+      "#.#...#F......#",
+      "###############"
+    ]
+  }
+]
