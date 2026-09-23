@@ -92,7 +92,7 @@
   {
   "name": "Follow the fire",
   "hint": "You don't have much fireweight, but each fire you cross gives you 6 shingles more",
-  "limit": 40,
+  "limit": 8,
   "fireweight": 3,
   "runes": [
     "ᚢ",
@@ -117,7 +117,7 @@
 },
 {
   "name": "Don't get stuck",
-  "hint": "The xx",
+  "hint": "The - squares decrease the multiplier. Use the ᛏ rune to keep it above 0.",
   "limit": 40,
   "fireweight": 60,
   "runes": [
@@ -132,8 +132,8 @@
 },
 {
   "name": "A tough lock",
-  "hint": "The + squares increase the multiplier.",
-  "limit": 30,
+  "hint": "The + squares increase the multiplier which might make you move too far. Use the ᚾ rune to decrease it and navigate tight spaces.",
+  "limit": 16,
   "fireweight": 42,
   "runes": [
     "ᚢ",
@@ -156,9 +156,29 @@
   ]
 },
 {
+  "name": "Long Jump",
+  "lore": "A lock drawn at the locksmith's bench.",
+  "hint": "You don't have enough fireweight to reach the heart, but you can build up a store by going back and forth over replenish squares that are close together",
+  "limit": 40,
+  "fireweight": 6,
+  "runes": [
+    "ᚢ",
+    "ᛞ",
+    "ᛈ",
+    "ᚱ"
+  ],
+  "map": [
+    "################",
+    "#S.F.F.FF......#",
+    "##############.#",
+    "#########G.....#",
+    "################"
+  ]
+},
+{
   "name": "Launchpad",
   "hint": "You can accumulate fireweight by going back and forth over recharge squares when they are close together.",
-  "limit": 40,
+  "limit": 42,
   "fireweight": 6,
   "runes": [
     "ᚢ",
