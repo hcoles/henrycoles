@@ -2,6 +2,7 @@
   {
     "name": "A straight path",
     "hint": "The R rune moves the ember right. Click on it to add it to your spell. You'll need to use it multiple times to make the ember reach the lock's heart.",
+    "small_hint": "Add runes to create a spell that moves the yellow ember to the purple heart of the lock.",
     "limit": 10,
     "fireweight": 18,
     "runes": ["ᚱ"],
@@ -55,7 +56,8 @@
   },
   {
     "name": "Seems familiar",
-    "hint": "This lock has a limit on how much fireweight you can use. Each movement rune uses 3 shingles. You'll need to use the ᛏ rune to increase the value in the multiplier. Each movement rune moves the ember by this amount, so if you make the value bigger the rune will move you more spaces for the same amount of fireweight. If it gets confusing try step mode to run the spell one rune at a time.",
+    "hint": "This lock has a limit on how much fireweight you can use. Each movement rune uses 3 shingles. You'll need to use the ᚴ rune to increase the value in the multiplier. Each movement rune moves the ember by this amount, so if you make the value bigger the rune will move you more spaces for the same amount of fireweight. If it gets confusing try step mode to run the spell one rune at a time.",
+    "small_hint": "You have less fireweight this time. You can increase the number of squares moved per rune with ᚴ",
     "limit": 30,
     "fireweight": 46,
     "runes": [
@@ -63,7 +65,7 @@
       "ᛞ",
       "ᛈ",
       "ᚱ",
-      "ᛏ"
+      "ᚴ"
     ],
     "map": [
       "#########",
@@ -74,25 +76,42 @@
       "#.......#",
       "#######.#",
       "#G......#",
-      "#########"
+      "#########",
+      "*********"
     ]
   },
   {
-    "name": "Wrong direction",
-    "hint": "Use the ᚾ rune to decrease the value in the multiplier. It start with a value of 1. If it is 0, movement runes have no effect, but moving -1 space to the left is the same as moving right.",
-    "limit": 8,
-    "fireweight": 20,
-    "runes": ["ᛈ","ᚾ"],
+    "name": "Wrong Turn",
+    "hint": "Use ᚴ and ᚾ to keep within the rune limit.",
+    "limit": 28,
+    "fireweight": 80,
+    "runes": [
+      "ᚢ",
+      "ᛞ",
+      "ᛈ",
+      "ᚱ",
+      "ᚴ",
+      "ᚾ"
+    ],
     "map": [
-      "#########",
-      "#S.....G#",
-      "#########"
+      "###########",
+      "#S#...##..#",
+      "#.#.#.....#",
+      "#...####..#",
+      "#.#####.#.#",
+      "###..G#.#.#",
+      "#...###.#.#",
+      "#.###...#.#",
+      "#.#.#.###.#",
+      "#.........#",
+      "###########"
     ]
   },
   {
   "name": "Follow the fire",
-  "hint": "You don't have much fireweight, but each fire you cross gives you 6 shingles more",
-  "limit": 40,
+  "hint": "You don't have much fireweight, but each fire you cross gives you 6 shingles more. Follow the fires to reach the heart without running out.",
+  "small_hint": "Each time you cross a fire you gain 6 shingles of fireweight",
+  "limit": 18,
   "fireweight": 3,
   "runes": [
     "ᚢ",
@@ -112,16 +131,18 @@
     "#..........#",
     "#.......F.F#",
     "#.........G#",
-    "############"
+    "############",
+    "************"
   ]
 },
 {
   "name": "Don't get stuck",
-  "hint": "The xx",
+  "hint": "The - squares decrease the multiplier. Use the ᚴ rune to keep it above 0.",
+  "small_hint": "The - squares decrease the multiplier. If it reaches 0, the runes won't move the ember at all",
   "limit": 40,
   "fireweight": 60,
   "runes": [
-    "ᛏ",
+    "ᚴ",
     "ᚱ"
   ],
   "map": [
@@ -132,15 +153,16 @@
 },
 {
   "name": "A tough lock",
-  "hint": "The + squares increase the multiplier.",
-  "limit": 30,
+  "hint": "The + squares increase the multiplier which might make you move too far. Use the ᚾ rune to decrease it and navigate tight spaces.",
+  "small_hint": "The + squares increase the multiplier, which might make navigating tight spaces hard",
+  "limit": 16,
   "fireweight": 42,
   "runes": [
     "ᚢ",
     "ᛞ",
     "ᛈ",
     "ᚱ",
-    "ᛏ",
+    "ᚴ",
     "ᚾ"
   ],
   "map": [
@@ -152,20 +174,41 @@
     "###.#.#.#",
     "#F#.#.#.#",
     "#FF...#G#",
-    "#########"
+    "#########",
+    "*********"
+  ]
+},
+{
+  "name": "Long Jump",
+  "hint": "You don't have enough fireweight to reach the heart, but you can build up a store by going back and forth over replenish squares that are close together",
+  "small_hint": "You can build up fireweight by going back and forth over squares where it's close together",
+  "limit": 36,
+  "fireweight": 6,
+  "runes": [
+    "ᚢ",
+    "ᛞ",
+    "ᛈ",
+    "ᚱ"
+  ],
+  "map": [
+    "################",
+    "#S.F.F.FF......#",
+    "##############.#",
+    "#########G.....#",
+    "################"
   ]
 },
 {
   "name": "Launchpad",
   "hint": "You can accumulate fireweight by going back and forth over recharge squares when they are close together.",
-  "limit": 40,
+  "limit": 52,
   "fireweight": 6,
   "runes": [
     "ᚢ",
     "ᛞ",
     "ᛈ",
     "ᚱ",
-    "ᛏ",
+    "ᚴ",
     "ᚾ"
   ],
   "map": [
@@ -185,7 +228,7 @@
 },
   {
     "name": "The Crooked Path",
-    "hint": "Long straight corridors reward careful use of ᛏ and ᚾ",
+    "hint": "Long straight corridors reward careful use of ᚴ and ᚾ",
     "limit": 66,
     "fireweight": 74,
     "runes": [
@@ -193,7 +236,7 @@
       "ᛞ",
       "ᛈ",
       "ᚱ",
-      "ᛏ",
+      "ᚴ",
       "ᚾ"
     ],
     "map": [
@@ -212,6 +255,35 @@
       "#.#.#.#.###.###",
       "#.#...#F......#",
       "###############"
+    ]
+  },
+  {
+    "name": "Titus' Snare",
+    "hint": "You'll need ever trick you've learnt to get past Titus' final lock",
+    "limit": 66,
+    "fireweight": 8,
+    "runes": [
+      "ᚢ",
+      "ᛞ",
+      "ᛈ",
+      "ᚱ",
+      "ᚴ",
+      "ᚾ"
+    ],
+    "map": [
+      "#############",
+      "#S.F#########",
+      "###..#.F.+F##",
+      "#F.#F.F###.##",
+      "#F..###.F.F##",
+      "#-#F.#.F##..#",
+      "#-##.F.#....#",
+      "#-###.#..##.#",
+      "#.####..#...#",
+      "#.##.+.##.#.#",
+      "#.#..####...#",
+      "#.FFF...#.#G#",
+      "#############"
     ]
   }
 ]
