@@ -1,6 +1,6 @@
 ---
 title: Privacy
-layout: default
+layout: page
 permalink: /privacy/
 published: true
 ---

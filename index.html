@@ -1,0 +1,95 @@
+---
+layout: traitors-magic
+title: Henry Coles Middle Grade Fantasy
+---
+<!-- Hero Section -->
+<header class="hero hero--book">
+  <div class="hero-glow"></div>
+  <div class="container hero-inner">
+    <div class="hero-content hero--cover">
+      <h1 class="hero-title">
+        <span class="title-line">TRAITOR'S</span>
+        <span class="title-line title-main">MAGIC</span>
+      </h1>
+      <div class="hero-book-layout">
+        <div class="cover-wrap reveal">
+          <img src="{{ '/assets/images/tm_cover.jpg' | relative_url }}" alt="Traitor's Magic - Book Cover" class="cover-image">
+        </div>
+        <div class="hero-book-details reveal">
+
+          <blockquote class="blurb-quote">
+            Two young rivals. One chance to learn magic.
+          </blockquote>
+          <p class="blurb-body">
+            Snobbish Haskell and fierce, determined Agatha couldn't be more different, but they both want the same thing: to impress the wizard Titus and become his apprentice.
+          </p>
+          <p class="blurb-body">
+            The two soon learn there's more to the wizard and his magic than they could have imagined, and that locked inside the castle's library are secrets worth lying, stealing – and even dying – for.
+          </p>
+          <p class="blurb-body blurb-highlight">
+            But Haskell and Agatha aren't the only ones who want to get inside…<br>
+            A twisty tale of dangerous sorcery and the power of unexpected friendship.
+          </p>
+
+          <div class="preorder-links">
+            <span class="preorder-label">Preorder now:</span>
+            <a href="https://www.waterstones.com/book/9781529531312" target="_blank" rel="noopener" class="preorder-btn">Waterstones</a>
+            <a href="https://blackwells.co.uk/bookshop/product/9781529531312" target="_blank" rel="noopener" class="preorder-btn">Blackwell's</a>
+            <a href="http://www.amazon.co.uk/dp/1529531314" target="_blank" rel="noopener" class="preorder-btn">Amazon UK</a>
+            <a href="https://uk.bookshop.org/book/9781529531312" target="_blank" rel="noopener" class="preorder-btn">Bookshop.org</a>
+            <a href="https://www.foyles.co.uk/book/traitors-magic/9781529531312" target="_blank" rel="noopener" class="preorder-btn">Foyles</a>
+            <a href="http://www.hive.co.uk/Search/Keyword?keyword=9781529531312" target="_blank" rel="noopener" class="preorder-btn">Hive</a>
+            <a href="https://www.tgjonesonline.co.uk/Search/Keyword?keyword=9781529531312" target="_blank" rel="noopener" class="preorder-btn">T&G Jones</a>
+          </div>
+
+          <div class="publisher-links">
+            <a href="https://www.walker.co.uk/9781529531312/traitors-magic/" target="_blank" rel="noopener">Walker UK</a> ·
+            <a href="https://www.walkerbooks.com.au/book/9781529531312/" target="_blank" rel="noopener">Walker Australia</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="Henry's Profile Picture" class="profile-img">
+      </div>
+      <div class="about-bio reveal">
+        <p class="bio-intro">Hi, I'm Henry. I live in Edinburgh and write middle grade fiction.</p>
+        <p class="bio-body">
+          I'm one of the 2024 SCBWI <a href="https://www.undiscoveredvoices.com/">Undiscovered Voices</a> and also one of the <a href="https://www.scottishbooktrust.com/writing-and-authors/new-writers-awards/this-years-new-writers">2023 Scottish Book Trust New Writer Awardees.</a>
+        </p>
+        <p class="bio-body">
+          As well as the SCBWI and Book Trust awards, I've been shortlisted and longlisted in other competitions including <a href="https://www.chickenhousebooks.com/blog/its-shortlist-time/">The Times/Chickenhouse Prize</a>, The <a href="https://bathnovelaward.co.uk/childrens-novel-award/">Bath Children's Novel Award</a>, <a href="https://www.wellsfestivalofliterature.org.uk/">Wells Book For Children</a>, <a href="https://www.creativewritingmatters.co.uk/2023-exeter-novel-prize.html">The Exeter Novel Prize</a> and <a href="https://write-mentor.com/awards/">The WriteMentor Novel Award</a>. Some of them more than once.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section id="news" class="news-section">
+  <div class="container">
+    <h2 class="section-title reveal">Latest News</h2>
+    <div class="news-feed">
+      {% for post in site.posts limit:2 %}
+      <div class="news-item">
+        <div class="news-date">{{ post.date | date: "%B %Y" }}</div>
+        <h3 class="news-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="news-excerpt">{{ post.content | split: '</p>' | first | append: '</p>' }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more &rarr;</a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="news-more reveal">
+      <a href="{{ '/news/' | relative_url }}" class="btn btn-outline">View All News →</a>
+    </div>
+  </div>
+</section>

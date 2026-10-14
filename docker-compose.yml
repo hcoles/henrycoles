@@ -1,10 +1,13 @@
-version: '2.4'
-
 services:
   jekyll:
-    image: bretfisher/jekyll-serve:stable-20220517213519
-    volumes:
-      - .:/site
+    build: .
     ports:
-      - '4000:4000'
+      - "4000:4000"
+    volumes:
+      - .:/srv/jekyll
+      - jekyll-data:/srv/jekyll/_site
+    environment:
+      - JEKYLL_ENV=development
 
+volumes:
+  jekyll-data:

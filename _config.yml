@@ -1,70 +1,39 @@
-### your site title here
-
 title: Henry Coles
-description: middle grade fantasy 
+description: Author of Traitor's Magic
+url: ""
+baseurl: ""
+timezone: UTC
+encoding: utf-8
 
-baseurl: #name of GitHub repository
-url: #custom url to be used instead of GitHub repository
-email: hello@henrycoles.com
-
-# Pagination
-paginate: 4
-permalink: /news/:year/:title/
-paginate_path: /news/page:num/
-
-# Social media links in footer
-bluesky: "pitest.bsky.social"
-twitter: "_pitest"
-linkedin: "henry-coles-474ab93"
-stackoverflow: "#"
-github: "#"
-researchgate: "#"
-orcid: "#"
-quora: "#"
-instagram: "#"
-facebook: "#"
-
- 
-# Markdown
-highlighter: rouge
+# Build settings
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 
-# Tracker
-analytics:
-
-# optimization -> compress.html
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
-
-#collection
+# Collections
 collections:
-  books:
+  posts:
     output: true
-    permalink: /books/:name/
-    order:
-      - the_stowaway.md
-      - the_traitors_moon.md
-      - the_cipher_engines.md
-sass:
-  sass_dir: /assets/css/_sass
-  style: compressed
+    permalink: /news/:year/:slug/
 
-include:
-  - _pages
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
+# Exclude from processing
 exclude:
   - README.md
-  - LICENSE.md
+  - node_modules
+  - Dockerfile
+  - docker-compose.yml
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-email-protect
-  - jekyll-target-blank
+

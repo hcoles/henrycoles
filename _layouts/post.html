@@ -1,14 +1,21 @@
 ---
-layout: default
+layout: traitors-magic
 ---
-<h1 class="post-headline">{{page.title}}</h1>
-<p class="meta"><small>{{page.date | date: '%B %d, %Y'}}</small></p>
+<main class="content-page">
+  <header class="page-header">
+    <h1 class="page-title">News</h1>
+    <hr class="page-divider">
+  </header>
 
-{{content}}
+  <section class="content-page-content">
+    <article class="news-full-item">
+      <div class="news-full-date">{{ page.date | date: "%B %Y" }}</div>
+      <h2 class="news-full-title">{{ page.title }}</h2>
+      <div class="news-full-body md-body">{{ content }}</div>
+    </article>
 
-<!-- Comments only for posts -->
-{% if page.path contains '_posts' %}
-    {% if site.disqus-shortname %}
-        {% include disqus.html %}
-    {% endif %}
-{% endif %}
+    <nav class="back-nav">
+      <a href="{{ '/news/' | relative_url }}">&larr; All News</a>
+    </nav>
+  </section>
+</main>
