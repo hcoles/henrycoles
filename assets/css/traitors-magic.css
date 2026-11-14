@@ -1074,3 +1074,48 @@ a:hover { color: var(--color-gold-bright); }
 .review-card figcaption::before {
   content: "— ";
 }
+
+/* ===== Press quote (home page) ===== */
+.press-quote-section {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 0 0;
+}
+
+.press-quote {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(212, 168, 67, 0.4);
+  border-bottom: 1px solid rgba(212, 168, 67, 0.4);
+}
+
+.press-quote blockquote {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.25vw, 1.425rem);
+  line-height: 1.5;
+  color: var(--color-gold-light);
+}
+
+.press-quote blockquote::before { content: "\201C"; }
+.press-quote blockquote::after { content: "\201D"; }
+
+.press-quote figcaption {
+  margin-top: 1.25rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.press-quote cite {
+  font-style: normal;
+  color: var(--color-gold);
+}
+
+.hero--compact {
+  min-height: 0;
+  padding-bottom: 1rem;
+}
